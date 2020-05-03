@@ -12,7 +12,7 @@ do shell script "killall System\\ Events"
 
 startApp(appName)
 
-tell application "System Events" to tell process "Docker" #
+tell application "System Events" to tell process "Docker"
     tell menu bar item 1 of menu bar 2
         click menu item "Dashboard" of menu 1
     end tell
