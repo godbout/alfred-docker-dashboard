@@ -1,150 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>bundleid</key>
-	<string>mo.com.sleeplessmind.docker-dashboard</string>
-	<key>category</key>
-	<string>Productivity</string>
-	<key>connections</key>
-	<dict>
-		<key>860A0EA0-4A49-49A1-ADE1-464C4CDBC2E4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>20CC8CAA-226A-4C60-B343-9EE7F0986368</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>AA9EAFFE-0009-47EC-808A-67B0C26D1148</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>860A0EA0-4A49-49A1-ADE1-464C4CDBC2E4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-	</dict>
-	<key>createdby</key>
-	<string>Guillaume Leclerc</string>
-	<key>description</key>
-	<string>huh?</string>
-	<key>disabled</key>
-	<false/>
-	<key>name</key>
-	<string>Docker Dashboard</string>
-	<key>objects</key>
-	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>dd</string>
-				<key>subtext</key>
-				<string>huh?</string>
-				<key>text</key>
-				<string>Docker Dashboard</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>AA9EAFFE-0009-47EC-808A-67B0C26D1148</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>set appName to "Docker"startApp(appName)tell application "System Events" to tell process "Docker"	ignoring application responses		click menu bar item 1 of menu bar 2	end ignoringend telldo shell script "killall System\\ Events"
-
-# delay 0.5startApp(appName)tell application "System Events" to tell process "Docker" #	tell menu bar item 1 of menu bar 2		click menu item "Dashboard" of menu 1	end tellend tellon startApp(appName)	set IsRunning to false	set tries to 20	repeat until (IsRunning is true or tries is 0)		set IsRunning to appIsRunning(appName)		set tries to (tries - 1)#		delay 0.2	end repeatend startAppon appIsRunning(appName)	tell application "System Events" to (name of processes) contains appNameend appIsRunning</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>860A0EA0-4A49-49A1-ADE1-464C4CDBC2E4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>set appName to "Docker"startApp(appName)tell application "System Events" to tell process "Docker"	ignoring application responses		click menu bar item 1 of menu bar 2	end ignoringend telldo shell script "killall System\\ Events"
-startApp(appName)tell application "System Events" to tell process "Docker" #	tell menu bar item 1 of menu bar 2		click menu item "Dashboard" of menu 1	end tellend tellon startApp(appName)	set IsRunning to false	set tries to 20	repeat until (IsRunning is true or tries is 0)		set IsRunning to appIsRunning(appName)		set tries to (tries - 1)# 		delay 0.1	end repeatend startAppon appIsRunning(appName)	tell application "System Events" to (name of processes) contains appNameend appIsRunning</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>20CC8CAA-226A-4C60-B343-9EE7F0986368</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-	</array>
-	<key>readme</key>
-	<string></string>
-	<key>uidata</key>
-	<dict>
-		<key>20CC8CAA-226A-4C60-B343-9EE7F0986368</key>
-		<dict>
-			<key>xpos</key>
-			<integer>490</integer>
-			<key>ypos</key>
-			<integer>260</integer>
-		</dict>
-		<key>860A0EA0-4A49-49A1-ADE1-464C4CDBC2E4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>320</integer>
-			<key>ypos</key>
-			<integer>260</integer>
-		</dict>
-		<key>AA9EAFFE-0009-47EC-808A-67B0C26D1148</key>
-		<dict>
-			<key>xpos</key>
-			<integer>140</integer>
-			<key>ypos</key>
-			<integer>260</integer>
-		</dict>
-	</dict>
-	<key>version</key>
-	<string></string>
-	<key>webaddress</key>
-	<string>https://sleeplessmind.com.mo</string>
-</dict>
-</plist>
