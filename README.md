@@ -9,7 +9,7 @@
 
 # WHAT IS THAT
 
-Kitematic has been [deprecated](https://docs.docker.com/kitematic/) and Docker has now a Dashboard accessible from the menu bar. It's a pain to hold a mouse though!!! So you can access it from the keyboard with this Workflow.
+Kitematic has been [deprecated](https://docs.docker.com/kitematic/) and Docker has now a [Dashboard](https://docs.docker.com/desktop/dashboard/) accessible from the menu bar. It's a pain to hold a mouse though!!! So you can access it from the keyboard with this Workflow.
 
 # MANDATORY SCREENSHOTS
 
