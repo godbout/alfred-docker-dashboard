@@ -15,8 +15,6 @@ Kitematic has been [deprecated](https://docs.docker.com/kitematic/) and Docker h
 
 ![sesame ouvre toi](https://raw.githubusercontent.com/godbout/alfred-docker-dashboard/master/resources/screenshots/sesame-ouvre-toi.gif "sesame ouvre toi")
 
-<iframe width="575" height="400" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" style="border: none;" src="https://share.getcloudapp.com/6qu5vLxd?embed=true"></iframe>
-
 # DOWNLOAD
 
 Latest release available on the [release page](https://github.com/godbout/alfred-docker-dashboard/releases).
