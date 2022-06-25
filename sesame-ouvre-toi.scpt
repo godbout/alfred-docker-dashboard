@@ -1,8 +1,8 @@
-set appName to "Docker"
+set appName to "Docker Desktop"
 
 startApp(appName)
 
-tell application "System Events" to tell process "Docker"
+tell application "System Events" to tell process appName
     ignoring application responses
         click menu bar item 1 of menu bar 2
     end ignoring
@@ -12,7 +12,7 @@ do shell script "killall System\\ Events"
 
 startApp(appName)
 
-tell application "System Events" to tell process "Docker"
+tell application "System Events" to tell process appName
     tell menu bar item 1 of menu bar 2
         click menu item "Dashboard" of menu 1
     end tell
