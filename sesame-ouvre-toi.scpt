@@ -14,7 +14,7 @@ startApp(appName)
 
 tell application "System Events" to tell process appName
     tell menu bar item 1 of menu bar 2
-        click menu item "Dashboard" of menu 1
+        click menu item "Go to the Dashboard" of menu 1
     end tell
 end tell
 
