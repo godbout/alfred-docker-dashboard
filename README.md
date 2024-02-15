@@ -13,7 +13,7 @@ Kitematic has been [deprecated](https://docs.docker.com/kitematic/) and Docker h
 
 # MANDATORY SCREENSHOTS
 
-![sesame ouvre toi](https://raw.githubusercontent.com/godbout/alfred-docker-dashboard/master/resources/screenshots/sesame-ouvre-toi.gif "sesame ouvre toi")
+![sesame-ouvre-toi](https://github.com/godbout/alfred-docker-dashboard/assets/121373/9a272055-349c-4dab-81c5-3a05faa19e81)
 
 # DOWNLOAD
 
